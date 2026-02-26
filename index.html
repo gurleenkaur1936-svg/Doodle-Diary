@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doodle Diary — Where Creativity Begins</title>
+  <meta name="description"
+    content="Doodle Diary offers premium aesthetic stationery — notebooks, planners, and creative supplies designed to inspire students and creators." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════
+       NAVIGATION BAR
+  ══════════════════════════════════ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <!-- Logo -->
+      <a href="index.html" class="nav-logo" aria-label="Doodle Diary Home">
+        Doodle <span>Diary</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html" role="menuitem">About</a></li>
+        <li role="none"><a href="products.html" role="menuitem">Products</a></li>
+        <li role="none"><a href="testimonials.html" role="menuitem">Testimonials</a></li>
+        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+      </ul>
+
+      <!-- Cart Icon -->
+      <div class="nav-cart" title="Cart" aria-label="Shopping cart">
+        🛍️ <span class="cart-count">0</span>
+      </div>
+
+      <!-- Hamburger -->
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <div class="mobile-nav" role="menu" aria-hidden="true">
+      <a href="index.html" role="menuitem">Home</a>
+      <a href="about.html" role="menuitem">About</a>
+      <a href="products.html" role="menuitem">Products</a>
+      <a href="testimonials.html" role="menuitem">Testimonials</a>
+      <a href="contact.html" role="menuitem">Contact</a>
+      <div class="nav-cart" style="padding: 8px 0; border: none;" aria-label="Cart">
+        🛍️ Cart — <span class="cart-count">0</span> items
+      </div>
+    </div>
+  </nav>
+
+  <!-- Cart Toast Notification -->
+  <div class="cart-toast" role="status" aria-live="polite"></div>
+
+  <!-- ══════════════════════════════════
+       HERO SECTION
+  ══════════════════════════════════ -->
+  <section class="hero section" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-badge">✨ New Collection 2025</span>
+        <h1>Where <em>Creativity</em><br />Begins</h1>
+        <p>Premium stationery designed to inspire. Journals, planners, and artistic supplies crafted for students,
+          dreamers, and creators.</p>
+        <div class="hero-btns">
+          <a href="products.html" class="btn btn-primary">Shop Now →</a>
+          <a href="about.html" class="btn btn-outline">Our Story</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Decorative Right Panel -->
+    <div class="hero-visual" aria-hidden="true">
+      <div class="hero-visual-inner">
+        <div class="hero-card">
+          <div class="hero-card-icon">📔</div>
+          <span>Journals</span>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">🖊️</div>
+          <span>Pens</span>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">📅</div>
+          <span>Planners</span>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon">🎨</div>
+          <span>Art Kits</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FEATURES SECTION
+  ══════════════════════════════════ -->
+  <section class="features section" id="features">
+    <div class="container">
+      <div class="section-title fade-in">
+        <p class="badge">Why Choose Us</p>
+        <h2>Crafted With Love &amp; Care</h2>
+        <span class="underline"></span>
+      </div>
+
+      <div class="features-grid">
+        <!-- Card 1 -->
+        <div class="feature-card fade-in fade-in-delay-1">
+          <div class="feature-icon" aria-hidden="true">📃</div>
+          <h3>Premium Paper Quality</h3>
+          <p>Smooth, bleed-resistant 100gsm paper that works beautifully with every type of pen, marker, or brush.</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="feature-card fade-in fade-in-delay-2">
+          <div class="feature-icon" aria-hidden="true">🎨</div>
+          <h3>Aesthetic Designs</h3>
+          <p>Pinterest-worthy covers and layouts that make every writing session feel like an art project.</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="feature-card fade-in fade-in-delay-3">
+          <div class="feature-icon" aria-hidden="true">💰</div>
+          <h3>Budget Friendly</h3>
+          <p>Premium quality at student-friendly prices. Because creativity shouldn't come with a heavy price tag.</p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="feature-card fade-in fade-in-delay-4">
+          <div class="feature-icon" aria-hidden="true">🎓</div>
+          <h3>Perfect for Students &amp; Creators</h3>
+          <p>Thoughtfully designed layouts to help you study smarter, plan better, and create freely.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FEATURED PRODUCTS SECTION
+  ══════════════════════════════════ -->
+  <section class="section bg-pattern" id="featured-products">
+    <div class="container">
+      <div class="section-title fade-in">
+        <p class="badge">Our Favourites</p>
+        <h2>Featured Products</h2>
+        <p>Handpicked bestsellers loved by our community.</p>
+        <span class="underline"></span>
+      </div>
+
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <article class="product-card fade-in fade-in-delay-1">
+          <div class="product-img" aria-label="Aesthetic Planner product image">
+            <img src="IM/6.jpeg" alt="Aesthetic Planner">
+          </div>
+          <div class="product-body">
+            <h3>Aesthetic Planner</h3>
+            <p>12-month undated planner with habit trackers, mood logs, and gorgeous watercolour layouts.</p>
+            <div class="product-footer">
+              <span class="product-price">₹349</span>
+              <button class="add-to-cart" aria-label="Add Aesthetic Planner to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card fade-in fade-in-delay-2">
+          <div class="product-img" aria-label="Minimal Notebook product image">
+            <img src="IM/7.webp" alt="Minimal Notebook">
+          </div>
+          <div class="product-body">
+            <h3>Minimal Notebook</h3>
+            <p>Clean dotted pages in a soft-touch cover — your everyday companion for notes and ideas.</p>
+            <div class="product-footer">
+              <span class="product-price">₹199</span>
+              <button class="add-to-cart" aria-label="Add Minimal Notebook to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card fade-in fade-in-delay-3">
+          <div class="product-img" aria-label="Pastel Highlighters product image">
+            <img src="IM/10.jpeg" alt="Pastel Highlighters">
+          </div>
+          <div class="product-body">
+            <h3>Pastel Highlighters</h3>
+            <p>Set of 6 dreamy pastel tones. Chisel tip for broad strokes, fine tip for precision highlights.</p>
+            <div class="product-footer">
+              <span class="product-price">₹149</span>
+              <button class="add-to-cart" aria-label="Add Pastel Highlighters to cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- View All CTA -->
+      <div style="text-align:center; margin-top: 48px;" class="fade-in">
+        <a href="products.html" class="btn btn-outline">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       NEWSLETTER SECTION
+  ══════════════════════════════════ -->
+  <section class="newsletter section" id="newsletter">
+    <div class="container">
+      <div class="section-title fade-in">
+        <h2>Join Our Creative Circle</h2>
+        <p>Subscribe for new arrivals, exclusive discounts, and stationery inspiration straight to your inbox.</p>
+      </div>
+
+      <form class="newsletter-form fade-in" novalidate aria-label="Newsletter subscription form">
+        <input type="email" placeholder="Enter your email address" aria-label="Email address" required />
+        <button type="submit" class="btn btn-primary">Subscribe ✨</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Brand -->
+        <div class="footer-brand">
+          <div class="footer-logo">Doodle <span>Diary</span></div>
+          <p>Premium aesthetic stationery for students &amp; creators. Every page is a new beginning.</p>
+          <div class="social-icons" aria-label="Social media links" style="margin-top: 20px;">
+            <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+            <a href="#" class="social-icon" aria-label="Pinterest">📌</a>
+            <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+            <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer-col">
+          <h4>Categories</h4>
+          <ul>
+            <li><a href="products.html">Planners</a></li>
+            <li><a href="products.html">Notebooks</a></li>
+            <li><a href="products.html">Journals</a></li>
+            <li><a href="products.html">Highlighters</a></li>
+            <li><a href="products.html">Sticky Notes</a></li>
+          </ul>
+        </div>
+
+        <!-- Help -->
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns Policy</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>© 2025 Doodle Diary. All rights reserved.</p>
+        <p>Made with 🤍 for every creative soul.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll-to-Top Button -->
+  <button class="scroll-top" aria-label="Scroll back to top" title="Back to top">↑</button>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>

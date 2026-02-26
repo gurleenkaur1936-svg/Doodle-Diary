@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products — Doodle Diary</title>
+    <meta name="description"
+        content="Browse the full Doodle Diary collection — planners, notebooks, bullet journals, sticky notes, highlighters, and more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- ══════════════════════════════════
+       NAVIGATION BAR
+  ══════════════════════════════════ -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-logo" aria-label="Doodle Diary Home">Doodle <span>Diary</span></a>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Home</a></li>
+                <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                <li role="none"><a href="products.html" role="menuitem">Products</a></li>
+                <li role="none"><a href="testimonials.html" role="menuitem">Testimonials</a></li>
+                <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+            </ul>
+            <div class="nav-cart" title="Cart" aria-label="Shopping cart">🛍️ <span class="cart-count">0</span></div>
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="mobile-nav" role="menu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="contact.html">Contact</a>
+            <div class="nav-cart" style="padding:8px 0;border:none;">🛍️ Cart — <span class="cart-count">0</span> items
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Toast -->
+    <div class="cart-toast" role="status" aria-live="polite"></div>
+
+    <!-- ══════════════════════════════════
+       PAGE HERO
+  ══════════════════════════════════ -->
+    <section class="page-hero">
+        <div class="container">
+            <p class="badge">Our Collection</p>
+            <h1>Shop All Products</h1>
+            <p>Handcrafted stationery for every mood, every moment, and every margin note.</p>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+       PRODUCTS GRID
+  ══════════════════════════════════ -->
+    <section class="section" id="products">
+        <div class="container">
+
+            <!-- Filter Bar -->
+            <div class="filter-bar" role="toolbar" aria-label="Filter products by category">
+                <button class="filter-btn active" data-filter="all">All Products</button>
+                <button class="filter-btn" data-filter="planners">Planners</button>
+                <button class="filter-btn" data-filter="notebooks">Notebooks</button>
+                <button class="filter-btn" data-filter="supplies">Supplies</button>
+                <button class="filter-btn" data-filter="journals">Journals</button>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="products-grid">
+
+                <!-- 1 — Aesthetic Planner -->
+                <article class="product-card fade-in" data-category="planners">
+                    <div class="product-img" aria-label="Aesthetic Planner">
+                        <img src="IM/6.jpeg" alt="Aesthetic Planner">
+                    </div>
+                    <div class="product-body">
+                        <h3>Aesthetic Planner</h3>
+                        <p>12-month undated planner with habit trackers, mood logs, and gorgeous watercolour layouts.
+                        </p>
+                        <div class="product-footer">
+                            <span class="product-price">₹349</span>
+                            <button class="add-to-cart" aria-label="Add Aesthetic Planner to cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 2 — Minimal Notebook -->
+                <article class="product-card fade-in fade-in-delay-1" data-category="notebooks">
+                    <div class="product-img" aria-label="Minimal Notebook">
+                        <img src="IM/7.webp" alt="Minimal Notebook">
+                    </div>
+                    <div class="product-body">
+                        <h3>Minimal Notebook</h3>
+                        <p>Clean dotted pages in a soft-touch flexible cover — your everyday companion for notes and
+                            ideas.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹199</span>
+                            <button class="add-to-cart" aria-label="Add Minimal Notebook to cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 3 — Bullet Journal -->
+                <article class="product-card fade-in fade-in-delay-2" data-category="journals">
+                    <div class="product-img" aria-label="Bullet Journal">
+                        <img src="IM/2.jpeg" alt="Bullet Journal">
+                    </div>
+                    <div class="product-body">
+                        <h3>Bullet Journal</h3>
+                        <p>Classic dot-grid bujo with numbered pages, index, key legend pages, and a ribbon bookmark.
+                        </p>
+                        <div class="product-footer">
+                            <span class="product-price">₹279</span>
+                            <button class="add-to-cart" aria-label="Add Bullet Journal to cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4 — Study Sticky Notes -->
+                <article class="product-card fade-in fade-in-delay-3" data-category="supplies">
+                    <div class="product-img" aria-label="Study Sticky Notes">
+                        <img src="IM/50.jpeg" alt="Study Sticky Notes">
+                    </div>
+                    <div class="product-body">
+                        <h3>Study Sticky Notes</h3>
+                        <p>Pack of 5 pastel pads (80 sheets each). Perfect for flashcards, desk reminders &amp;
+                            annotations.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹129</span>
+                            <button class="add-to-cart" aria-label="Add Study Sticky Notes to cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 5 — Pastel Highlighters -->
+                <article class="product-card fade-in fade-in-delay-1" data-category="supplies">
+                    <div class="product-img" aria-label="Pastel Highlighters">
+                        <img src="IM/10.jpeg" alt="Pastel Highlighters">
+                    </div>
+                    <div class="product-body">
+                        <h3>Pastel Highlighters</h3>
+                        <p>Set of 6 dreamy pastel tones. Chisel tip for broad strokes, fine tip for precision
+                            highlights.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹149</span>
+                            <button class="add-to-cart" aria-label="Add Pastel Highlighters to cart">Add to
+                                Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 6 — Daily To-Do Pad -->
+                <article class="product-card fade-in fade-in-delay-2" data-category="planners">
+                    <div class="product-img" aria-label="Daily To-Do Pad">
+                        <img src="IM/2.jpeg" alt="Daily To-Do Pad">
+                    </div>
+                    <div class="product-body">
+                        <h3>Daily To-Do Pad</h3>
+                        <p>100-sheet tear-off daily planner pad with priority blocks, water intake, and gratitude
+                            prompts.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹169</span>
+                            <button class="add-to-cart" aria-label="Add Daily To-Do Pad to cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 7 — Vintage Diary -->
+                <article class="product-card fade-in fade-in-delay-3" data-category="journals">
+                    <div class="product-img" aria-label="Vintage Diary">
+                        <img src="IM/8.jpg" alt="Vintage Diary">
+                    </div>
+                    <div class="product-body">
+                        <h3>Vintage Diary</h3>
+                        <p>A5 linen hardcover diary with gilded edges, a magnetic clasp, and cream-tinted ruled pages.
+                        </p>
+                        <div class="product-footer">
+                            <span class="product-price">₹399</span>
+                            <button class="add-to-cart" aria-label="Add Vintage Diary to cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 8 — Washi Tape Set -->
+                <article class="product-card fade-in fade-in-delay-1" data-category="supplies">
+                    <div class="product-img" aria-label="Washi Tape Set">
+                        <img src="IM/4.webp" alt="Washi Tape Set">
+                    </div>
+                    <div class="product-body">
+                        <h3>Washi Tape Set</h3>
+                        <p>12 rolls of botanical &amp; geometric patterned washi tape in muted, aesthetic tones. Perfect
+                            for journaling.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹229</span>
+                            <button class="add-to-cart" aria-label="Add Washi Tape Set to cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 9 — Academic Planner -->
+                <article class="product-card fade-in fade-in-delay-2" data-category="planners">
+                    <div class="product-img" aria-label="Academic Planner">
+                        <img src="IM/9.webp" alt="Academic Planner">
+                    </div>
+                    <div class="product-body">
+                        <h3>Academic Planner</h3>
+                        <p>Semester-wise planner with subject timetables, exam countdowns, and weekly goal trackers.</p>
+                        <div class="product-footer">
+                            <span class="product-price">₹319</span>
+                            <button class="add-to-cart" aria-label="Add Academic Planner to cart">Add to Cart</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div><!-- /products-grid -->
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+       NEWSLETTER STRIP
+  ══════════════════════════════════ -->
+    <section class="newsletter section">
+        <div class="container">
+            <div class="section-title fade-in">
+                <h2>Never Miss a Drop</h2>
+                <p>Subscribe to get early access to new collections and exclusive subscriber-only discounts.</p>
+            </div>
+            <form class="newsletter-form fade-in" novalidate aria-label="Newsletter subscription">
+                <input type="email" placeholder="Your email address" aria-label="Email address" required />
+                <button type="submit" class="btn btn-primary">Subscribe ✨</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════
+       FOOTER
+  ══════════════════════════════════ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">Doodle <span>Diary</span></div>
+                    <p>Premium aesthetic stationery for students &amp; creators. Every page is a new beginning.</p>
+                    <div class="social-icons" style="margin-top:20px;" aria-label="Social media">
+                        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-icon" aria-label="Pinterest">📌</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Planners</a></li>
+                        <li><a href="#">Notebooks</a></li>
+                        <li><a href="#">Journals</a></li>
+                        <li><a href="#">Highlighters</a></li>
+                        <li><a href="#">Sticky Notes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Doodle Diary. All rights reserved.</p>
+                <p>Made with 🤍 for every creative soul.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
